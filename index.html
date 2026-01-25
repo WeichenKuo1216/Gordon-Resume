@@ -143,6 +143,58 @@ li{
   text-decoration:none;
 }
 .pbtn:hover{ background:#f2f2f2; }
+/* ===== Pretty Project Navigator ===== */
+.project-nav{
+  border:1px solid #000;
+  border-radius:10px;
+  padding:12px 14px;
+  margin:10px 0 18px 0;
+  background:#fff;
+}
+
+.project-nav-title{
+  font-weight:bold;
+  font-size:16px;
+  margin:0 0 10px 0;
+  letter-spacing:.3px;
+}
+
+.project-nav-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 12px;
+}
+
+.project-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border:1px solid #000;
+  border-radius:999px;
+  text-decoration:none;
+  color:#000;
+  font-size:15px;
+  line-height:1;
+  transition: transform .08s ease, background .12s ease;
+}
+
+.project-pill:hover{
+  background:#f3f4f6;
+  transform: translateY(-1px);
+  text-decoration:none;
+}
+
+.project-pill:active{
+  transform: translateY(0px);
+}
+
+.project-tag{
+  font-size:12px;
+  color:#555;
+  border-left:1px solid #000;
+  padding-left:8px;
+}
 
 
   
@@ -217,12 +269,23 @@ Tainan, Taiwan | gordon911216@gmail.com |
 <div class="section">
 <h2>Projects</h2>
 <div class="project-nav">
-  <div class="project-nav-title">Project Navigation</div>
+  <div class="project-nav-title">Selected Projects</div>
 
-  <a href="./projects/audit.html">Safety Audit Scheduling</a>
-  <a href="./projects/vrp.html">Vehicle Routing Optimization</a>
-  <a href="./projects/policy.html">Policy Impact Evaluation</a>
+  <div class="project-nav-links">
+    <a class="project-pill" href="./projects/audit.html">
+      Safety Audit Scheduling <span class="project-tag">MILP</span>
+    </a>
+
+    <a class="project-pill" href="./projects/vrp.html">
+      Vehicle Routing <span class="project-tag">VRP</span>
+    </a>
+
+    <a class="project-pill" href="./projects/policy.html">
+      Policy Evaluation <span class="project-tag">SCM/DiD</span>
+    </a>
+  </div>
 </div>
+
 
 
 
