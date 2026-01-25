@@ -12,6 +12,7 @@ body{
   background:white;
   color:black;
   line-height:1.6;
+  font-size:16px;
 }
 
 .container{
@@ -22,12 +23,12 @@ body{
 
 h1{
   font-size:40px;
-  margin-bottom:2px;
+  margin:0 0 2px 0;
 }
 
 .subtitle{
   font-size:20px;
-  margin-bottom:5px;
+  margin:0 0 8px 0;
   color:#555;
 }
 
@@ -49,163 +50,159 @@ h2{
   font-size:28px;
   border-bottom:1px solid black;
   padding-bottom:4px;
-  margin-bottom:12px;
+  margin:0 0 12px 0;
 }
 
 .item{
-  margin:4px 0;
-  margin-bottom:16px;
+  margin:0 0 16px 0;
 }
 
 .title-row{
   display:flex;
   justify-content:space-between;
   flex-wrap:wrap;
-  font-weight:bold;
-}
-  
-u2{margin:4px 0;
-  margin-bottom:4px;
-  margin-top:6px;
-  color:gray;
-}
-ul{margin:4px 0;
-  padding-left:20px;
-  margin-top:6px;
+  align-items:baseline;
+  gap:10px;
 }
 
-li{
-  margin:4px 0;
-}
-
+/* === Education lines === */
 .degree{
   margin:3px 0;
   color:#555;
   font-size:16px;
 }
+
+/* === Experience header line === */
+.company{
+  font-size:20px;     /* company name bigger */
+  font-weight:bold;
+}
+
+.time{
+  font-size:16px;
+  color:#555;
+  white-space:nowrap;
+}
+
+/* === Role line (smaller + dark gray) === */
 .role{
   margin:2px 0 6px 0;
+  font-size:16px;
+  color:#555;
   font-style:italic;
 }
 
-  
+/* Lists */
+ul{
+  margin:6px 0 0 0;
+  padding-left:20px;
+}
+
+li{
+  margin:4px 0;
+}
 </style>
-</head> 
+</head>
+
 <body>
 <div class="container">
 
 <h1>Wei-Chen Kuo</h1>
-<p class="subtitle">
-Optimization • Supply Chain • Manufacturing & Data Analytics • Time Series Analytics
-</p>
+<p class="subtitle">Optimization • Supply Chain • Manufacturing & Data Analytics • Time Series Analytics</p>
 
 <p>
-Tainan, Taiwan |gordon911216@gmail.com |
-<a href="www.linkedin.com/in/gordon-kuo-755b7729a">LinkedIn</a>
+Tainan, Taiwan | gordon911216@gmail.com |
+<a href="https://www.linkedin.com/in/gordon-kuo-755b7729a" target="_blank" rel="noreferrer">LinkedIn</a>
 </p>
 
 <div class="section">
-
 <h2>Education</h2>
 
 <div class="title-row">
-<span>National Cheng Kung University (NCKU)</span>
-<span>Sep. 2021 – Expected Jun. 2026</span>
+  <span class="company" style="font-size:18px;">National Cheng Kung University (NCKU)</span>
+  <span class="time">Sep. 2021 – Expected Jun. 2026</span>
 </div>
 
 <div class="item">
-
-<p class="degree">
-B.B.A. in Transportation & Communication Management Science
-</p>
-
-<p class="degree">
-B.A. in Political Science
-</p>
-
+  <p class="degree">B.B.A. in Transportation & Communication Management Science</p>
+  <p class="degree">B.A. in Political Science</p>
+</div>
 </div>
 
-
-  
+<div class="section">
 <h2>Professional Experience</h2>
 
 <div class="item">
-
-<div class="title-row">
-  <strong>ASML</strong>
-  <span>Jun. 2025 – Present</span>
-</div>
-
-<p class="role">Industrial Engineer (Business Engineer) Intern</p>
-
-<ul>
-  <li>Developed automation tools using VBA, Power BI, and Power Automate.</li>
-  <li>Improved workflow efficiency and production planning.</li>
-</ul>
+  <div class="title-row">
+    <span class="company">ASML</span>
+    <span class="time">Jun. 2025 – Present</span>
+  </div>
+  <p class="role">Industrial Engineer (Business Engineer) Intern</p>
+  <ul>
+    <li>Developed automation tools using VBA, Power BI, and Power Automate.</li>
+    <li>Improved workflow efficiency and production planning.</li>
+  </ul>
 </div>
 
 <div class="item">
-
-<div class="title-row">
-  <strong>IMS Nanofabrication</strong>
-  <span>Apr. 2025 ~ Jun. 2025</span>
-</div>
-
-<p class="role">Logistics & Service Support Intern</p>
-
-<ul>
-  <li>Coordinated warehouse-to-fab logistics workflows.</li>
-  <li>Supported on-site operations and process improvements.</li>
-</ul>
+  <div class="title-row">
+    <span class="company">IMS Nanofabrication</span>
+    <span class="time">Apr. 2025 – Jun. 2025</span>
+  </div>
+  <p class="role">Logistics & Service Support Intern</p>
+  <ul>
+    <li>Coordinated warehouse-to-fab logistics workflows.</li>
+    <li>Supported on-site operations and process improvements.</li>
+  </ul>
 </div>
 
 <div class="item">
-
-<div class="title-row">
-  <strong>Global Logistics Management Research Laboratory, National Cheng Kung University</strong>
-  <span>Jul. 2025 – Present</span>
+  <div class="title-row">
+    <span class="company">Global Logistics Management Research Laboratory, NCKU</span>
+    <span class="time">Jul. 2025 – Present</span>
+  </div>
+  <p class="role">Research Assistant</p>
+  <ul>
+    <li>Hospital triage optimization and policy evaluation research.</li>
+    <li>Statistical modeling and visualization.</li>
+  </ul>
 </div>
-
-<p class="role">Research Assistant</p>
-
-<ul>
-  <li>Hospital triage optimization and policy evaluation research.</li>
-  <li>Statistical modeling and visualization</li>
-</ul>
 </div>
-  
-
 
 <div class="section">
 <h2>Projects</h2>
 
 <div class="item">
-<strong>Safety Audit Scheduling (MILP)</strong>
-<ul>
-<li>Optimization model with operational constraints solved using Gurobi.</li>
-</ul>
+  <div class="title-row">
+    <span class="company" style="font-size:18px;">Safety Audit Scheduling (MILP)</span>
+  </div>
+  <ul>
+    <li>Optimization model with operational constraints solved using Gurobi.</li>
+  </ul>
 </div>
 
 <div class="item">
-<strong>Vehicle Routing Optimization</strong>
-<ul>
-<li>VRP with time windows, pickup & delivery, and multi-vehicle constraints.</li>
-</ul>
+  <div class="title-row">
+    <span class="company" style="font-size:18px;">Vehicle Routing Optimization</span>
+  </div>
+  <ul>
+    <li>VRP with time windows, pickup & delivery, and multi-vehicle constraints.</li>
+  </ul>
 </div>
 
 <div class="item">
-<strong>Policy Impact Evaluation (SCM / DiD)</strong>
-<ul>
-<li>Causal inference with robustness checks and reporting.</li>
-</ul>
+  <div class="title-row">
+    <span class="company" style="font-size:18px;">Policy Impact Evaluation (SCM / DiD)</span>
+  </div>
+  <ul>
+    <li>Causal inference with robustness checks and reporting.</li>
+  </ul>
 </div>
 </div>
 
 <div class="section">
 <h2>Skills</h2>
-<p>
-Optimization (MILP), Gurobi, Python, R, Power BI, VBA, Statistics, Data Visualization
-</p>
+<p>Optimization (MILP), Gurobi, Python, R, Power BI, VBA, Statistics, Data Visualization</p>
 </div>
 
 </div>
