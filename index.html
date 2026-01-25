@@ -101,6 +101,51 @@ ul{
 li{
   margin:4px 0;
 }
+
+/* --- Project navigation block --- */
+.project-nav{
+  border:1px solid #000;
+  padding:12px 14px;
+  margin:10px 0 18px 0;
+}
+
+.project-nav-title{
+  font-weight:bold;
+  margin:0 0 8px 0;
+  font-size:18px;
+}
+
+.project-nav a{
+  display:inline-block;
+  margin:0 14px 6px 0;
+  color:#000;
+  text-decoration:none;
+}
+
+.project-nav a:hover{
+  text-decoration:underline;
+}
+
+/* optional: small gray meta text */
+.project-meta{
+  color:#555;
+  font-size:15px;
+  margin:2px 0 0 0;
+}
+
+/* buttons for repo/demo */
+.pbtn{
+  display:inline-block;
+  border:1px solid #000;
+  padding:2px 8px;
+  margin-left:8px;
+  font-size:14px;
+  text-decoration:none;
+}
+.pbtn:hover{ background:#f2f2f2; }
+
+
+  
 </style>
 </head>
 
@@ -171,34 +216,65 @@ Tainan, Taiwan | gordon911216@gmail.com |
 
 <div class="section">
 <h2>Projects</h2>
+<div class="project-nav">
+  <div class="project-nav-title">Project Navigation</div>
+
+  <a href="#proj-audit">Safety Audit Scheduling</a>
+  <a href="#proj-vrp">Vehicle Routing Optimization</a>
+  <a href="#proj-policy">Policy Impact Evaluation</a>
+</div>
 
 <div class="item">
+<div class="item" id="proj-audit">
   <div class="title-row">
     <span class="company" style="font-size:18px;">Safety Audit Scheduling (MILP)</span>
+
+    <span>
+      <a class="pbtn" href="YOUR_REPO_LINK" target="_blank" rel="noreferrer">Repo</a>
+      <a class="pbtn" href="YOUR_DEMO_LINK" target="_blank" rel="noreferrer">Demo</a>
+    </span>
   </div>
+
+  <p class="project-meta">Optimization • Gurobi • Scheduling</p>
   <ul>
     <li>Optimization model with operational constraints solved using Gurobi.</li>
   </ul>
 </div>
 
+
 <div class="item">
+  <div class="item" id="proj-vrp">
   <div class="title-row">
     <span class="company" style="font-size:18px;">Vehicle Routing Optimization</span>
+
+    <span>
+      <a class="pbtn" href="YOUR_REPO_LINK" target="_blank" rel="noreferrer">Repo</a>
+    </span>
   </div>
+
+  <p class="project-meta">VRP • Time Windows • Pickup & Delivery</p>
   <ul>
     <li>VRP with time windows, pickup & delivery, and multi-vehicle constraints.</li>
   </ul>
 </div>
 
+
 <div class="item">
+  <div class="item" id="proj-policy">
   <div class="title-row">
     <span class="company" style="font-size:18px;">Policy Impact Evaluation (SCM / DiD)</span>
+
+    <span>
+      <a class="pbtn" href="YOUR_REPORT_LINK" target="_blank" rel="noreferrer">Report</a>
+    </span>
   </div>
+
+  <p class="project-meta">Causal Inference • SCM • DiD</p>
   <ul>
     <li>Causal inference with robustness checks and reporting.</li>
   </ul>
 </div>
-</div>
+
 
 <div class="section">
 <h2>Skills</h2>
