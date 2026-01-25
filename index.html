@@ -8,9 +8,10 @@
 <style>
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:#0f172a;
-  color:white;
+  font-family: "Times New Roman", Times, serif;
+  background:white;
+  color:black;
+  line-height:1.6;
 }
 
 .container{
@@ -19,32 +20,41 @@ body{
   padding:50px 20px;
 }
 
-.section{
-  background:#1e293b;
-  padding:25px;
-  border-radius:12px;
-  margin-bottom:24px;
+h1{
+  font-size:36px;
+  margin-bottom:5px;
 }
 
-h1{font-size:34px;margin:0;}
-h2{font-size:16px;letter-spacing:2px;color:#93c5fd;}
-
-.tags span{
-  background:#334155;
-  padding:6px 12px;
-  border-radius:20px;
-  margin:6px 6px 0 0;
-  display:inline-block;
-  font-size:13px;
+.subtitle{
+  font-size:16px;
+  margin-bottom:15px;
 }
 
 a{
-  color:#93c5fd;
-  margin-right:12px;
+  color:black;
   text-decoration:none;
+  margin-right:14px;
 }
 
-.item{margin-bottom:18px;}
+a:hover{
+  text-decoration:underline;
+}
+
+.section{
+  margin-top:28px;
+}
+
+h2{
+  font-size:18px;
+  border-bottom:1px solid black;
+  padding-bottom:4px;
+  margin-bottom:12px;
+}
+
+.item{
+  margin-bottom:16px;
+}
+
 .title-row{
   display:flex;
   justify-content:space-between;
@@ -52,80 +62,107 @@ a{
   font-weight:bold;
 }
 
-ul{padding-left:20px;}
+ul{
+  padding-left:20px;
+  margin-top:6px;
+}
+
+li{
+  margin:4px 0;
+}
 </style>
 </head>
 
 <body>
 <div class="container">
 
-<div class="section">
 <h1>Wei-Chen Kuo</h1>
-<p>NCKU Senior • Optimization • Supply Chain • Manufacturing & Data</p>
-
-<div class="tags">
-<span>MILP</span>
-<span>Python</span>
-<span>R</span>
-<span>Gurobi</span>
-<span>Power BI</span>
-</div>
+<p class="subtitle">
+NCKU Senior • Optimization • Supply Chain • Manufacturing & Data
+</p>
 
 <p>
-<a href="mailto:YOUR_EMAIL@gmail.com">Email</a>
-<a href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a>
-<a href="https://github.com/YOUR_GITHUB">GitHub</a>
+<a href="mailto:gordon911216@gmail.com">Email</a>
+<a href="www.linkedin.com/in/gordon-kuo-755b7729a">LinkedIn</a>
 <a href="./resume.pdf">PDF</a>
 </p>
-</div>
 
 <div class="section">
-<h2>EXPERIENCE</h2>
+<h2>Experience</h2>
 
 <div class="item">
 <div class="title-row">
 <span>Manufacturing Business Engineer Intern — ASML</span>
-<span>2025</span>
+<span>2025 – Present</span>
 </div>
 <ul>
-<li>Built automation tools for workflow optimization.</li>
-<li>Developed capacity planning dashboards.</li>
+<li>Developed automation tools using VBA, Power BI, and Power Automate.</li>
+<li>Improved workflow efficiency and production planning.</li>
 </ul>
 </div>
 
 <div class="item">
 <div class="title-row">
-<span>Logistics Intern — IMS Nanofabrication</span>
+<span>Logistics & Service Support Intern — IMS Nanofabrication</span>
 <span>2025</span>
 </div>
 <ul>
-<li>Coordinated fab logistics operations.</li>
-<li>Improved process efficiency.</li>
+<li>Coordinated warehouse-to-fab logistics workflows.</li>
+<li>Supported on-site operations and process improvements.</li>
+</ul>
+</div>
+
+<div class="item">
+<div class="title-row">
+<span>Research Assistant — National Cheng Kung University</span>
+<span>2025 – Present</span>
+</div>
+<ul>
+<li>Hospital triage optimization and policy evaluation research.</li>
+<li>Statistical modeling and visualization.</li>
 </ul>
 </div>
 </div>
 
 <div class="section">
-<h2>PROJECTS</h2>
+<h2>Projects</h2>
 
 <div class="item">
 <strong>Safety Audit Scheduling (MILP)</strong>
 <ul>
-<li>Optimization model with real-world constraints.</li>
+<li>Optimization model with operational constraints solved using Gurobi.</li>
 </ul>
 </div>
 
 <div class="item">
 <strong>Vehicle Routing Optimization</strong>
 <ul>
-<li>VRP with time windows & pickups.</li>
+<li>VRP with time windows, pickup & delivery, and multi-vehicle constraints.</li>
+</ul>
+</div>
+
+<div class="item">
+<strong>Policy Impact Evaluation (SCM / DiD)</strong>
+<ul>
+<li>Causal inference with robustness checks and reporting.</li>
 </ul>
 </div>
 </div>
 
 <div class="section">
-<h2>EDUCATION</h2>
-<p>National Cheng Kung University — TCMS & Political Science</p>
+<h2>Education</h2>
+<p>
+National Cheng Kung University (NCKU)<br>
+B.S. Transportation & Communication Management Science<br>
+Second Major: Political Science
+</p>
+</div>
+
+<div class="section">
+<h2>Skills</h2>
+<p>
+Optimization (MILP), Gurobi, Python, R, Power BI, VBA, Statistics, Data Visualization
+</p>
 </div>
 
 </div>
