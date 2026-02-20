@@ -66,7 +66,6 @@ h2{
   gap:10px;
 }
 
-/* === Education lines === */
 .degree{
   margin:3px 0;
   color:#555;
@@ -74,9 +73,8 @@ h2{
   font-weight:bold;
 }
 
-/* === Experience header line === */
 .company{
-  font-size:20px;     /* company name bigger */
+  font-size:20px;
   font-weight:bold;
 }
 
@@ -86,7 +84,6 @@ h2{
   white-space:nowrap;
 }
 
-/* === Role line (smaller + dark gray) === */
 .role{
   margin:2px 0 6px 0;
   font-size:16px;
@@ -95,7 +92,6 @@ h2{
   font-style:italic;
 }
 
-/* Lists */
 ul{
   margin:6px 0 0 0;
   padding-left:20px;
@@ -105,47 +101,6 @@ li{
   margin:4px 0;
 }
 
-/* --- Project navigation block --- */
-.project-nav{
-  border:1px solid #000;
-  padding:12px 14px;
-  margin:10px 0 18px 0;
-}
-
-.project-nav-title{
-  font-weight:bold;
-  margin:0 0 8px 0;
-  font-size:18px;
-}
-
-.project-nav a{
-  display:inline-block;
-  margin:0 14px 6px 0;
-  color:#000;
-  text-decoration:none;
-}
-
-.project-nav a:hover{
-  text-decoration:underline;
-}
-
-/* optional: small gray meta text */
-.project-meta{
-  color:#555;
-  font-size:15px;
-  margin:2px 0 0 0;
-}
-
-/* buttons for repo/demo */
-.pbtn{
-  display:inline-block;
-  border:1px solid #000;
-  padding:2px 8px;
-  margin-left:8px;
-  font-size:14px;
-  text-decoration:none;
-}
-.pbtn:hover{ background:#f2f2f2; }
 /* ===== Pretty Project Navigator ===== */
 .project-nav{
   border:1px solid #000;
@@ -199,8 +154,16 @@ li{
   padding-left:8px;
 }
 
-
-  
+/* View-all button */
+.viewall{
+  display:inline-block;
+  border:1px solid #000;
+  border-radius:12px;
+  padding:8px 12px;
+  font-size:15px;
+  margin:4px 0 10px 0;
+}
+.viewall:hover{ background:#f3f4f6; text-decoration:none; }
 </style>
 </head>
 
@@ -213,90 +176,94 @@ li{
 <p>
 Tainan, Taiwan | gordon911216@gmail.com |
 <a href="https://www.linkedin.com/in/gordon-kuo-755b7729a" target="_blank" rel="noreferrer">LinkedIn</a>
+<a href="./projects.html" class="viewall">Projects Portfolio →</a>
 </p>
 
 <div class="section">
-<h2>Education</h2>
+  <h2>Education</h2>
 
-<div class="title-row">
-  <span class="company" style="font-size:18px;">National Cheng Kung University (NCKU)</span>
-  <span class="time">Sep. 2021 – Expected Jun. 2026</span>
-</div>
+  <div class="title-row">
+    <span class="company" style="font-size:18px;">National Cheng Kung University (NCKU)</span>
+    <span class="time">Sep. 2021 – Expected Jun. 2026</span>
+  </div>
 
-<div class="item">
-  <p class="degree">B.B.A. in Transportation & Communication Management Science</p>
-  <p class="degree">B.A. in Political Science</p>
-</div>
+  <div class="item">
+    <p class="degree">B.B.A. in Transportation & Communication Management Science</p>
+    <p class="degree">B.A. in Political Science</p>
+  </div>
 </div>
 
 <div class="section">
-<h2>Professional Experience</h2>
+  <h2>Professional Experience</h2>
 
-<div class="item">
-  <div class="title-row">
-    <span class="company">ASML</span>
-    <span class="time">Jun. 2025 – Present</span>
+  <div class="item">
+    <div class="title-row">
+      <span class="company">ASML</span>
+      <span class="time">Jun. 2025 – Present</span>
+    </div>
+    <p class="role">Industrial Engineer (Business Engineer) Intern</p>
+    <ul>
+      <li>Developed automation tools using VBA, Power BI, and Power Automate.</li>
+      <li>Improved workflow efficiency and production planning.</li>
+    </ul>
   </div>
-  <p class="role">Industrial Engineer (Business Engineer) Intern</p>
-  <ul>
-    <li>Developed automation tools using VBA, Power BI, and Power Automate.</li>
-    <li>Improved workflow efficiency and production planning.</li>
-  </ul>
-</div>
 
-<div class="item">
-  <div class="title-row">
-    <span class="company">Global Logistics Management Research Laboratory, NCKU</span>
-    <span class="time">Jul. 2025 – Present</span>
+  <div class="item">
+    <div class="title-row">
+      <span class="company">Global Logistics Management Research Laboratory, NCKU</span>
+      <span class="time">Jul. 2025 – Present</span>
+    </div>
+    <p class="role">Research Assistant</p>
+    <ul>
+      <li>Hospital triage optimization and policy evaluation research.</li>
+      <li>Statistical modeling and visualization.</li>
+    </ul>
   </div>
-  <p class="role">Research Assistant</p>
-  <ul>
-    <li>Hospital triage optimization and policy evaluation research.</li>
-    <li>Statistical modeling and visualization.</li>
-  </ul>
-</div>
-</div>
-  
-<div class="item">
-  <div class="title-row">
-    <span class="company">IMS Nanofabrication</span>
-    <span class="time">Apr. 2025 – Jun. 2025</span>
+
+  <div class="item">
+    <div class="title-row">
+      <span class="company">IMS Nanofabrication</span>
+      <span class="time">Apr. 2025 – Jun. 2025</span>
+    </div>
+    <p class="role">Logistics & Service Support Intern</p>
+    <ul>
+      <li>Coordinated warehouse-to-fab logistics workflows.</li>
+      <li>Supported on-site operations and process improvements.</li>
+    </ul>
   </div>
-  <p class="role">Logistics & Service Support Intern</p>
-  <ul>
-    <li>Coordinated warehouse-to-fab logistics workflows.</li>
-    <li>Supported on-site operations and process improvements.</li>
-  </ul>
 </div>
-
-
 
 <div class="section">
-<h2>Projects</h2>
-<div class="project-nav">
-  <div class="project-nav-title">Related Projects</div>
+  <h2>Projects</h2>
 
-  <div class="project-nav-links">
-    <a class="project-pill" href="./projects/audit.html">
-      Safety Audit Schedule Optimization <span class="project-tag">MILP</span>
-    </a>
+  <a class="viewall" href="./projects.html">View All 10 Projects →</a>
 
-    <a class="project-pill" href="./projects/bus.html">
-      School Bus Routing Optimization <span class="project-tag">MILP</span>
-    </a>
-    
-    <a class="project-pill" href="./projects/vrp.html">
-      Vehicle Routing Optimization <span class="project-tag">VRP</span>
-    </a>
+  <div class="project-nav">
+    <div class="project-nav-title">Featured Projects</div>
 
-    <a class="project-pill" href="./projects/policy.html">
-      Policy Evaluation <span class="project-tag">SCM/DiD</span>
-    </a>
+    <div class="project-nav-links">
+      <a class="project-pill" href="./projects/audit.html">
+        Shift Scheduling Optimization (Safety Audit) <span class="project-tag">MILP</span>
+      </a>
+
+      <a class="project-pill" href="./projects/bus.html">
+        School Bus Routing Optimization <span class="project-tag">MILP</span>
+      </a>
+
+      <a class="project-pill" href="./projects/agv.html">
+        AGV Routing <span class="project-tag">CVRP</span>
+      </a>
+
+      <a class="project-pill" href="./projects/carbon-tax-japan.html">
+        Carbon Tax Policy Evaluation (Japan) <span class="project-tag">DiD</span>
+      </a>
+
+      <a class="project-pill" href="./projects/bullpen.html">
+        Bullpen Timing Advisor (CPBL) <span class="project-tag">Win Prob</span>
+      </a>
+    </div>
   </div>
 </div>
-
-
-
 
 </div>
 </body>
