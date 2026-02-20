@@ -75,7 +75,6 @@
 <p class="sub">Optimization • Gurobi • Scheduling</p>
 
 <div>
-  <a class="btn" href="../docs/Safety%20Audit%20Scheduling%20final.pdf" target="_blank" rel="noreferrer">Open Report (PDF)</a>
   <a class="btn" href="../docs/Safety%20Audit%20Scheduling%20final.pdf" target="_blank" rel="noreferrer">Open Slides (PDF)</a>
   <a class="btn" href="../docs/audit-data.zip" target="_blank" rel="noreferrer">Download Files</a>
 </div>
@@ -84,7 +83,22 @@
 
 <h2>Overview</h2>
 <p>
-Write a short overview here: what problem you solved, why it matters, and what the final output is.
+This project focuses on optimizing the scheduling of safety audit tasks by explicitly balancing inspection efficiency and worker experience growth. Safety audits are critical for ensuring compliance with regulations, identifying workplace hazards, and improving organizational safety standards. However, planning who audits which project and when is a complex, high-stakes decision problem involving heterogeneous workers, skill constraints, and learning effects.
+The core contribution of this project is the formulation of a mathematical optimization model that assigns workers to audit tasks over time while considering:
+1. Different productivity levels between experienced and inexperienced workers
+2. Learning effects, where inexperienced workers improve through repeated participation
+3. Task-specific labor requirements
+4. Limits on worker workload and team composition
+5. Operational constraints such as “one task per day” (with discussion of realistic extensions)
+
+The objective function maximizes overall system efficiency by jointly accounting for total inspection output and human capital accumulation, rather than treating workforce skills as static. This makes the model particularly relevant for organizations that must both deliver audits efficiently today and develop skilled inspectors for the future.
+
+The project includes:
+1. A nonlinear optimization formulation capturing experience growth
+2. Computational experiments on both small and large instances
+3. Analysis of solver performance, scalability issues, and time-limit behavior
+4. A discussion of model limitations and extensions, such as replacing one-task-per-day constraints with daily working-time capacity
+
 </p>
 
 <h2>What I Did</h2>
@@ -97,7 +111,7 @@ Implementation: Python + Gurobi, visualization, testing.
 
 <h2>Results</h2>
 <p>
-Summarize outcomes (e.g., improved feasibility, runtime, quality). Add numbers if you have them.
+Overall, this project demonstrates how operations research and scheduling models can turn a messy, experience-driven planning problem into a transparent, repeatable, and defensible decision process, improving safety outcomes while supporting workforce development.
 </p>
 
 <h2>Slides & Report Preview (Scrollable)</h2>
@@ -116,23 +130,6 @@ Summarize outcomes (e.g., improved feasibility, runtime, quality). Add numbers i
       Slides preview — scroll inside the page.
       <div class="fallback">
         If it doesn’t load, <a href="../docs/Safety%20Audit%20Scheduling%20final.pdf" target="_blank" rel="noreferrer">open slides in a new tab</a>.
-      </div>
-    </figcaption>
-  </figure>
-
-  <!-- Report viewer -->
-  <figure>
-    <div class="viewer">
-      <iframe
-        src="../docs/Safety%20Audit%20Scheduling%20final.pdf"
-        height="560"
-        title="Safety Audit Scheduling Report (PDF)">
-      </iframe>
-    </div>
-    <figcaption>
-      Report preview — scroll inside the page.
-      <div class="fallback">
-        If it doesn’t load, <a href="../docs/Safety%20Audit%20Scheduling%20final.pdf" target="_blank" rel="noreferrer">open report in a new tab</a>.
       </div>
     </figcaption>
   </figure>
