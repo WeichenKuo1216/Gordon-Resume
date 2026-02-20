@@ -15,13 +15,18 @@
     font-size:16px;
   }
   .container{ max-width:900px; margin:auto; padding:50px 20px; }
+
   a{ color:#000; text-decoration:none; }
   a:hover{ text-decoration:underline; }
+
   h1{ font-size:34px; margin:0 0 6px 0; }
   .sub{ color:#555; margin:0 0 18px 0; }
+
   .bar{ border-top:1px solid #000; margin:18px 0; }
   h2{ font-size:20px; margin:18px 0 10px; }
+
   .meta{ color:#555; margin:6px 0; }
+
   .btn{
     display:inline-block;
     border:1px solid #000;
@@ -29,6 +34,8 @@
     margin:8px 10px 0 0;
     font-size:14px;
   }
+  .btn:hover{ background:#f3f4f6; text-decoration:none; }
+
   .grid{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -36,13 +43,26 @@
     margin-top:10px;
   }
   @media(max-width:820px){ .grid{ grid-template-columns:1fr; } }
+
   figure{ margin:0; }
-  img{
-    width:100%;
-    border:1px solid #000;
-    display:block;
-  }
   figcaption{ color:#555; font-size:14px; margin-top:6px; }
+
+  /* ===== Scrollable PDF Viewer ===== */
+  .viewer{
+    border:1px solid #000;
+    background:#fff;
+    overflow:hidden;
+  }
+  iframe{
+    width:100%;
+    border:0;
+    display:block;
+    background:#fff;
+  }
+  .fallback{
+    margin-top:8px;
+    font-size:14px;
+  }
 </style>
 </head>
 
@@ -56,6 +76,7 @@
 
 <div>
   <a class="btn" href="../docs/audit-report.pdf" target="_blank" rel="noreferrer">Open Report (PDF)</a>
+  <a class="btn" href="../docs/audit-slides.pdf" target="_blank" rel="noreferrer">Open Slides (PDF)</a>
   <a class="btn" href="../docs/audit-data.zip" target="_blank" rel="noreferrer">Download Files</a>
 </div>
 
@@ -79,16 +100,43 @@ Implementation: Python + Gurobi, visualization, testing.
 Summarize outcomes (e.g., improved feasibility, runtime, quality). Add numbers if you have them.
 </p>
 
-<h2>Images</h2>
+<h2>Slides & Report Preview (Scrollable)</h2>
 <div class="grid">
+
+  <!-- Slides viewer -->
   <figure>
-    <img src="../assets/audit-1.png" alt="Audit scheduling figure 1">
-    <figcaption>Example schedule visualization.</figcaption>
+    <div class="viewer">
+      <iframe
+        src="../docs/audit-slides.pdf"
+        height="560"
+        title="Safety Audit Scheduling Slides (PDF)">
+      </iframe>
+    </div>
+    <figcaption>
+      Slides preview — scroll inside the page.
+      <div class="fallback">
+        If it doesn’t load, <a href="../docs/audit-slides.pdf" target="_blank" rel="noreferrer">open slides in a new tab</a>.
+      </div>
+    </figcaption>
   </figure>
+
+  <!-- Report viewer -->
   <figure>
-    <img src="../assets/audit-2.png" alt="Audit scheduling figure 2">
-    <figcaption>Model structure / workflow.</figcaption>
+    <div class="viewer">
+      <iframe
+        src="../docs/audit-report.pdf"
+        height="560"
+        title="Safety Audit Scheduling Report (PDF)">
+      </iframe>
+    </div>
+    <figcaption>
+      Report preview — scroll inside the page.
+      <div class="fallback">
+        If it doesn’t load, <a href="../docs/audit-report.pdf" target="_blank" rel="noreferrer">open report in a new tab</a>.
+      </div>
+    </figcaption>
   </figure>
+
 </div>
 
 </div>
