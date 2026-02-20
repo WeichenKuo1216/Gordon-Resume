@@ -48,6 +48,10 @@
   figcaption{ color:#555; font-size:14px; margin-top:6px; }
 
   /* ===== Scrollable PDF Viewer ===== */
+  .viewer-wide{
+  width:1200px;
+  max-width:100%;
+  }
   .viewer{
     border:1px solid #000;
     background:#fff;
@@ -89,9 +93,9 @@ The core contribution of this project is the formulation of a mathematical optim
 2. Learning effects, where inexperienced workers improve through repeated participation<br>
 3. Task-specific labor requirements<br>
 4. Limits on worker workload and team composition<br>
-5. Operational constraints such as “one task per day” (with discussion of realistic extensions)<br>
+5. Operational constraints such as “one task per day” (with discussion of realistic extensions)<br><br>
 The objective function maximizes overall system efficiency by jointly accounting for total inspection output and human capital accumulation, rather than treating workforce skills as static. This makes the model particularly relevant for organizations that must both deliver audits efficiently today and develop skilled inspectors for the future.<br>
-
+<br>
 The project includes:<br>
 1. A nonlinear optimization formulation capturing experience growth<br>
 2. Computational experiments on both small and large instances<br>
@@ -118,7 +122,7 @@ Overall, this project demonstrates how operations research and scheduling models
 
   <!-- Slides viewer -->
   <figure>
-    <div class="viewer">
+    <div class="viewer viewer-wide">
       <iframe
         src="../docs/Safety%20Audit%20Scheduling%20final.pdf"
         height="560"
